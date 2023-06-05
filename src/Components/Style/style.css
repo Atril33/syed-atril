@@ -63,17 +63,16 @@ nav {
   text-transform: uppercase;
 }
 
-.hire-button {
-  width: 80px;
+.resume-button {
   padding: 8px;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 14px;
   background: #259be9;
   text-align: center;
   border-radius: 2px;
   font-weight: 500;
   cursor: pointer;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .header-container {
@@ -132,9 +131,6 @@ main {
  flex-direction: column;
 }
 
-
-
-
 .portfolio-cont {
   display: grid;
   grid-template-columns: auto auto auto; 
@@ -152,8 +148,7 @@ main {
   background: #fff;
   display: flex;
   justify-content: center;
- /*  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px; */
- box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .preview-image {
@@ -166,6 +161,7 @@ main {
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
   position: relative;
   overflow: hidden;
 }
@@ -196,7 +192,8 @@ main {
 
 .about-tab {
   width: 100%;
-  height: 700px;
+  height: auto;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,7 +201,6 @@ main {
 
 .about-heading,
 .portfolio-heading {
-  /* color: #464545; */
   color: #fff;
   font-size: 35px;
   text-align: center;
@@ -242,4 +238,100 @@ main {
 .about-des {
   width: 60%;
   color: #464545;
+}
+
+.social-links {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 5px;
+}
+.social-links * {
+  width: 120px;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.linkedin {
+  background: #0a66c2;
+}
+
+.github {
+  background:#24292f;
+}
+
+.wellfound {
+  background: #000;
+}
+
+.facebook {
+  background: #1198f6;
+}
+.skill-tab {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-tab::after {
+  position: absolute;
+  content: "";
+  width: 180px; 
+  height: 180px;
+  border: 1px solid #000;
+  right: -100px;
+  transform: rotate(100deg);
+  z-index: -1;
+}
+
+.skill-tab::before{
+  position: absolute;
+  content: "";
+  width: 170px; 
+  height: 170px;
+  background: #259be96e;
+  right: -80px;
+  transform: rotate(100deg);
+  z-index: -1;
+}
+
+.skill-heading {
+  color: #464545;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.skills-cont {
+  margin-top: 10px;
+  width: 50%;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 5px;
+}
+
+.skill-name {
+  padding: 10px 14px;
+  background: #f7f7f7;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+.plus {
+  background: #fff;
+  border: 2px solid #383737;
+  border-style: dashed;
+  font-size: 15px;
 }

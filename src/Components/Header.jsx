@@ -9,7 +9,7 @@ const Header = () => (
           <li className="nav-item">portfolio</li>
           <li className="nav-item">about</li>
           <li className="nav-item">contact</li>
-          <li className="nav-item hire-button">hire me</li>
+          <li className="nav-item resume-button">my resume</li>
         </ul>
       </nav>
       <div className="header-container">

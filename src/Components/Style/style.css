@@ -200,7 +200,8 @@ main {
 }
 
 .about-heading,
-.portfolio-heading {
+.portfolio-heading,
+.contact-heading {
   color: #fff;
   font-size: 35px;
   text-align: center;
@@ -210,7 +211,8 @@ main {
 }
 
 .about-heading::after,
-.portfolio-heading::after {
+.portfolio-heading::after,
+.contact-heading::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -223,7 +225,8 @@ main {
 }
 
 .about-heading::before,
-.portfolio-heading::before {
+.portfolio-heading::before,
+.contact-heading::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -334,4 +337,72 @@ main {
   border: 2px solid #383737;
   border-style: dashed;
   font-size: 15px;
+}
+
+
+/* ////////////////////////////////// Contact ////////////////////// */
+
+
+.contact-container {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-container::after {
+  position: absolute;
+  content: "";
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  bottom: -50%;
+  left: -200px;
+  border: 1px solid #464545;
+  z-index: -1;
+}
+
+
+.contact-container::before {
+  position: absolute;
+  content: "";
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  bottom: -50%;
+  left: -210px;
+  background: #259be96e;
+  z-index: -1;
+}
+
+.contact-heading {
+  padding: 0;
+}
+
+form {
+  margin: 10px 0 50px 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+form * {
+  margin: 5px 0;
+  padding: 8px;
+  font-size: 15px;
+}
+
+.submit {
+  background:#1198f6;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  padding: 9px 8px;
 }

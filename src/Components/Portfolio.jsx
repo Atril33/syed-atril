@@ -5,7 +5,7 @@ import project4 from './Math-megician.png';
 
 const Portfolio = () => (
   <main>
-       <h2 className="portfolio-heading">Portfolio</h2>
+    <h2 className="portfolio-heading">Portfolio</h2>
     <section className="portfolio-cont">
       <div className="project">
         <img src={project1} alt="QR Code Generator" className="preview-image" />

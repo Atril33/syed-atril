@@ -5,6 +5,7 @@ import { useEffect } from 'react'; */
 import Header from './Components/Header';
 import Portfolio from './Components/Portfolio';
 import Skill from './Components/Skill';
+import Contact from './Components/Contact';
 import './Components/Style/style.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Header />
       <Portfolio />
       <Skill />
+      <Contact />
     </>
   /*  <Routes>
       <Route path="/" element={<Home />} />

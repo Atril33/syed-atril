@@ -4,7 +4,7 @@ import { useEffect } from 'react'; */
 /* import { countryDataFetch } from './Redux/country/countrySlice'; */
 import Header from './Components/Header';
 import Portfolio from './Components/Portfolio';
-import Skill from './Components/Skill';
+import About from './Components/About';
 import Contact from './Components/Contact';
 import './Components/Style/style.css';
 
@@ -19,7 +19,7 @@ function App() {
     <>
       <Header />
       <Portfolio />
-      <Skill />
+      <About />
       <Contact />
     </>
   /*  <Routes>

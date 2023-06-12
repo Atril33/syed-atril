@@ -1,6 +1,6 @@
 const Contact = () => (
   <>
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
       <h2 className="contact-heading">Contact</h2>
       <form action="//https://formspree.io/f/mgeboelg" method="post" id="formaction">
         <input type="text" maxLength="30" name="name" placeholder="Your Name Here" id="input" className="name" required />

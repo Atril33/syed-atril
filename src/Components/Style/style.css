@@ -28,7 +28,7 @@ header::after {
   background: #259be9;
   left: -150px;
   bottom: -150px;
-  filter: blur(100px);
+  filter: blur(120px);
   z-index: 1;
 }
 
@@ -36,12 +36,13 @@ nav {
   position: fixed;
   width: 100%;
   height: 65px;
-  background: #fff;
+  background: #ffffff49;
+  backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 5;
-  box-shadow: 4px 4px 12px -9px rgba(0,0,0,0.1);
+/*   box-shadow: 4px 4px 12px -9px rgba(0,0,0,0.1); */
 }
 
 .logo {
@@ -63,6 +64,11 @@ nav {
   text-transform: uppercase;
 }
 
+.a-link {
+  color:#2a2b2b;
+  text-decoration: none;
+ }
+
 .resume-button {
   padding: 8px;
   color: #ffffff;
@@ -73,6 +79,12 @@ nav {
   font-weight: 500;
   cursor: pointer;
   text-transform: capitalize;
+}
+
+.menu-icons {
+  display: none;
+  width: 20px;
+  margin: 0 30px;
 }
 
 .header-container {
@@ -99,7 +111,7 @@ nav {
  font-size: 14px;
  width: 80%;
  margin: 5px 0;
- color: #383737;
+ color:#2a2b2b;
 }
 
 .illustration {
@@ -144,7 +156,6 @@ main {
 .project {
   width: 100%;
   height: auto;
-  max-width: 310px;
   background: #fff;
   display: flex;
   justify-content: center;
@@ -241,10 +252,14 @@ main {
 .about-des {
   width: 60%;
   color: #464545;
+  font-size: 13px;
+  font-weight: 500;
+  word-spacing: 1px;
+  margin-top: 10px;
 }
 
 .social-links {
-  margin: 10px 0;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 5px;
@@ -405,4 +420,63 @@ form * {
   color: #fff;
   cursor: pointer;
   padding: 9px 8px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    height: 50px;
+  }
+  .logo {
+    font-size: 18px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .menu-icons {
+    display: block;
+  } 
+
+  header {
+    background-image: url('../Images/3d-mobile-header-tm.png');
+    background-repeat: no-repeat;
+    background-position: fill;
+    height: 450px;
+  }
+
+  .header-info {
+    width: 100%;
+    margin-top: 100px;
+  } 
+
+  header::after {
+    display: none;
+  }
+  .info-title {
+    font-size: 30px;
+  }
+
+  .info-des {
+    font-size: 14px;
+    width: 100%;
+    margin: 5px 0;
+    color:#2a2b2b;
+   }
+
+  .illustration {
+    display: none;
+  }
+
+  .portfolio-cont {
+    grid-template-columns: auto;
+  }
+
+  .about-des {
+    width: 85%;
+  }
+
+  .social-links {
+    grid-template-columns: auto auto;
+  }
 }

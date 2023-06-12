@@ -1,4 +1,6 @@
-import backImage from './code_image.jpg';
+import menuBar from './Images/menu-bars.png';
+import backImage from './Images/code_image.jpg';
+import backMobileHeader from './Images/3d-mobile-header.png';
 
 const Header = () => (
   <>
@@ -6,11 +8,12 @@ const Header = () => (
       <nav id="nav-bar">
         <h1 className="logo">Atril</h1>
         <ul className="nav-list">
-          <li className="nav-item">portfolio</li>
-          <li className="nav-item">about</li>
-          <li className="nav-item">contact</li>
+          <li className="nav-item"><a href="#portfolio" className="a-link">portfolio</a></li>
+          <li className="nav-item"><a href="#about" className="a-link">about</a></li>
+          <li className="nav-item"><a href="#contact" className="a-link">contact</a></li>
           <li className="nav-item resume-button">my resume</li>
         </ul>
+        <img src={menuBar} alt="Menu Icon" className="menu-icons"></img>
       </nav>
       <div className="header-container">
         <div className="header-info">

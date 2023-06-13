@@ -1,19 +1,35 @@
+import React, { useState } from 'react';
 import menuBar from './Images/menu-bars.png';
 import backImage from './Images/code_image.jpg';
-import backMobileHeader from './Images/3d-mobile-header.png';
+import closeMenu from './Images/close_menu.png'
 
-const Header = () => (
+const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
+  
+    const toggleMenu = () => {
+      setIsOpen(!isOpen);
+    };
+  return (
   <>
     <header>
       <nav id="nav-bar">
         <h1 className="logo">Atril</h1>
         <ul className="nav-list">
-          <li className="nav-item"><a href="#portfolio" className="a-link">portfolio</a></li>
+        <li className="nav-item"><a href="#portfolio" className="a-link">portfolio</a></li>
           <li className="nav-item"><a href="#about" className="a-link">about</a></li>
           <li className="nav-item"><a href="#contact" className="a-link">contact</a></li>
           <li className="nav-item resume-button">my resume</li>
+         </ul>
+        { isOpen && (       
+        <ul className="nav-list-mobile">
+          <img src={closeMenu} alt="Close Icon" className="close-menu" onClick={toggleMenu}></img>
+        <li className="nav-item-mobile"><a href="#portfolio" className="a-link">portfolio</a></li>
+          <li className="nav-item-mobile"><a href="#about" className="a-link">about</a></li>
+          <li className="nav-item-mobile"><a href="#contact" className="a-link">contact</a></li>
+          <li className="nav-item-mobile resume-button">my resume</li>
         </ul>
-        <img src={menuBar} alt="Menu Icon" className="menu-icons"></img>
+        )}
+        <img src={menuBar} alt="Menu Icon" className="menu-icons" onClick={toggleMenu}></img>
       </nav>
       <div className="header-container">
         <div className="header-info">
@@ -26,7 +42,7 @@ const Header = () => (
             If you like what you see and have a project you need coded,
             don’t hestiate to contact me.
           </p>
-          <div className="connects" />
+          <div className="nav-item-mobile resume-button">my resume</div>
         </div>
         <div className="illustration">
           <img src={backImage} alt="Illustration" className="illut-image" />
@@ -35,6 +51,7 @@ const Header = () => (
       </div>
     </header>
   </>
-);
+)
+  }
 
 export default Header;

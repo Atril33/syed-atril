@@ -18,7 +18,7 @@ const Header = () => {
         <li className="nav-item"><a href="#portfolio" className="a-link">portfolio</a></li>
           <li className="nav-item"><a href="#about" className="a-link">about</a></li>
           <li className="nav-item"><a href="#contact" className="a-link">contact</a></li>
-          <li className="nav-item resume-button">my resume</li>
+          <li className="nav-item resume-button"><a href="https://docs.google.com/document/d/1fZZCECSqm6X3dd4_IPmgsvxgArtmKxxtvHjQ2kIWi28/edit?usp=sharing">my resume</a></li>
          </ul>
         { isOpen && (       
         <ul className="nav-list-mobile">
@@ -26,7 +26,7 @@ const Header = () => {
         <li className="nav-item-mobile"><a href="#portfolio" className="a-link">portfolio</a></li>
           <li className="nav-item-mobile"><a href="#about" className="a-link">about</a></li>
           <li className="nav-item-mobile"><a href="#contact" className="a-link">contact</a></li>
-          <li className="nav-item-mobile resume-button">my resume</li>
+          <li className="nav-item-mobile resume-button"><a href="https://docs.google.com/document/d/1fZZCECSqm6X3dd4_IPmgsvxgArtmKxxtvHjQ2kIWi28/edit?usp=sharing">my resume</a></li>
         </ul>
         )}
         <img src={menuBar} alt="Menu Icon" className="menu-icons" onClick={toggleMenu}></img>
@@ -42,7 +42,7 @@ const Header = () => {
             If you like what you see and have a project you need coded,
             don’t hestiate to contact me.
           </p>
-          <div className="nav-item-mobile resume-button">my resume</div>
+          <div className="resume-button mobile-resume"><a href="https://docs.google.com/document/d/1fZZCECSqm6X3dd4_IPmgsvxgArtmKxxtvHjQ2kIWi28/edit?usp=sharing">my resume</a></div>
         </div>
         <div className="illustration">
           <img src={backImage} alt="Illustration" className="illut-image" />

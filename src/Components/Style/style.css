@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  text-decoration: none;
 }
 
 body {
@@ -118,6 +119,10 @@ nav {
   width: 80%;
   margin: 5px 0;
   color: #2a2b2b;
+}
+
+.mobile-resume {
+  display: none;
 }
 
 .illustration {
@@ -526,7 +531,8 @@ form * {
     color: #2a2b2b;
   }
 
-  .resume-button:nth-child(3) {
+  .mobile-resume {
+    display: block;
     position: relative;
     top: 5px;
     left: 50px;

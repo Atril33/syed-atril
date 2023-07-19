@@ -1,7 +1,7 @@
 /* import { useDispatch } from 'react-redux';
 import { useEffect } from 'react'; */
 /* import { Route, Routes } from 'react-router-dom'; */
-/* import { countryDataFetch } from './Redux/country/countrySlice'; */
+/* import { countryDataFetch } from './Redux/project/projectSlice'; */
 import Header from './Components/Header';
 import Portfolio from './Components/Portfolio';
 import About from './Components/About';

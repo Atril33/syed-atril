@@ -1,0 +1,18 @@
+[
+  {
+    "name": "QR Code Generator",
+    "image": "https://raw.githubusercontent.com/Atril33/QR_Code_Generator/main/Image/QR%20Code%20Generator.png",
+    "description": "QR Code Generator is a website that allows users to generate custom QR codes by entering text or links. Developed using HTML, CSS, and JS, it uses an API for code generation. This project makes it easy for users to create QR codes for their websites, social media profiles, and other links.",
+    "languages": ["html", "css", "js", "api"],
+    "liveLink": "https://atril33.github.io/QR_Code_Generator/",
+    "sourceCode": "https://github.com/Atril33/QR_Code_Generator"
+  },
+  {
+    "name": "World Top Languages",
+    "image": "https://raw.githubusercontent.com/Atril33/World_top_languages/main/Images/live_preview.png",
+    "description": "World Top Languages is a website that shows you information about the most popular computer programming languages in the world and the best developers who use them. The website was made using HTML and CSS, which are computer languages used to create websites.",
+    "languages": ["html", "css", "js"],
+    "liveLink": "https://atril33.github.io/World_top_languages/index.html",
+    "sourceCode": "https://github.com/Atril33/World_top_languages"
+  }
+]

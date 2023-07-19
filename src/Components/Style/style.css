@@ -43,7 +43,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 5;
+  z-index: 11;
+
   /*   box-shadow: 4px 4px 12px -9px rgba(0,0,0,0.1); */
 }
 
@@ -74,7 +75,6 @@ nav {
 .resume-button {
   width: 90px;
   padding: 8px;
-  color: #ffffff;
   font-size: 14px;
   background: #259be9;
   text-align: center;
@@ -82,6 +82,10 @@ nav {
   font-weight: 500;
   cursor: pointer;
   text-transform: capitalize;
+}
+
+.resume-link {
+  color: #fff;
 }
 
 .nav-list-mobile {
@@ -152,32 +156,83 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+main::before {
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding: 10px;
+  right: -150px;
+  bottom: -100px;
+  background: #ebba346e;
+  border: 1.5px solid #000000;
+  transform: rotate(30deg);
+  z-index: -1;
 }
 
 .portfolio-cont {
   display: grid;
   grid-template-columns: auto auto auto;
   width: 70%;
+  max-width: 900px;
   height: auto;
   padding: 10px;
   margin: auto;
   gap: 10px;
+  justify-content: center;
 }
 
 .project {
   width: 100%;
-  height: auto;
-  max-width: 310px;
-  background: #fff;
+  height: 370px;
+  max-width: 290px;
+  background: #ffffff;
   display: flex;
-  justify-content: center;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  flex-direction: column;
+  align-content: center;
+  border: 1.5px solid #ece9e9;
+}
+
+.project-title {
+  margin-left: 10px;
+  font-size: 20px;
+  color: #3d4349;
+}
+
+.project-language {
+  margin: 10px 5px;
+}
+
+.project-button {
+ margin-left: 10px;
+ width: 100px;
+ background: #1198f6;
+ text-align: center;
+ padding: 3px 0;
+ color: #fff;
+ border-radius: 2px;
+ cursor: pointer;
+}
+
+.language-list {
+  display: inline-block;
+  margin: 0 3px;
+  padding: 2px 13px;
+  background: #f7f7f7;
+  color: #3d4349;
+  font-size: 13px;
+  border-radius: 2px;
 }
 
 .preview-image {
-  width: 100%;
+  width: 270px;
   height: 230px;
-  border-radius: 2px;
+  margin: 10px;
 }
 
 .about-container {
@@ -229,7 +284,7 @@ main {
   text-align: center;
   z-index: 2;
   position: relative;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .about-heading::after,
@@ -425,7 +480,10 @@ form {
   flex-direction: column;
 }
 
-form * {
+.name,
+.email,
+.submit,
+.message {
   margin: 5px 0;
   padding: 8px;
   font-size: 15px;
@@ -482,20 +540,20 @@ form * {
   }
 
   .close-menu {
-   position: absolute;
-   right: 30px;
-   top: 20px;
-   width: 20px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    width: 20px;
   }
 
   .nav-item-mobile {
-   padding: 10px;
-   text-align: center;
-   text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   .nav-item-mobile:nth-child(2) {
-   margin-top: 70px;
+    margin-top: 70px;
   }
 
   .resume-button {
@@ -503,11 +561,12 @@ form * {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 25px;
+    text-transform: capitalize;
   }
+
   header {
     background-image: url("../Images/3d-mobile-header-tm.png");
     background-repeat: no-repeat;
-    background-position: fill;
     height: 450px;
   }
 
@@ -567,7 +626,6 @@ form * {
 
 @media screen and (max-width: 550px) {
   .portfolio-cont {
-    width: 50%;
     grid-template-columns: auto;
     width: 280px;
     row-gap: 30px;

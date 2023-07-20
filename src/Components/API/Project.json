@@ -1,7 +1,7 @@
 [
   {
     "name": "QR Code Generator",
-    "image": "https://raw.githubusercontent.com/Atril33/QR_Code_Generator/main/Image/QR%20Code%20Generator.png",
+    "image": "https://raw.githubusercontent.com/Atril33/react-portfolio/desktop/src/Components/Images/QR-Code-Generator.png?token=GHSAT0AAAAAACFFUXTX3JOCE4UOOYBOLZX2ZFY27LQ",
     "description": "QR Code Generator is a website that allows users to generate custom QR codes by entering text or links. Developed using HTML, CSS, and JS, it uses an API for code generation. This project makes it easy for users to create QR codes for their websites, social media profiles, and other links.",
     "languages": ["html", "css", "js", "api"],
     "liveLink": "https://atril33.github.io/QR_Code_Generator/",
@@ -9,10 +9,35 @@
   },
   {
     "name": "World Top Languages",
-    "image": "https://raw.githubusercontent.com/Atril33/World_top_languages/main/Images/live_preview.png",
+    "image": "https://raw.githubusercontent.com/Atril33/react-portfolio/desktop/src/Components/Images/programming-language.png?token=GHSAT0AAAAAACFFUXTWXYYQH5BQ74YXJNO2ZFY25UQ",
     "description": "World Top Languages is a website that shows you information about the most popular computer programming languages in the world and the best developers who use them. The website was made using HTML and CSS, which are computer languages used to create websites.",
     "languages": ["html", "css", "js"],
     "liveLink": "https://atril33.github.io/World_top_languages/index.html",
     "sourceCode": "https://github.com/Atril33/World_top_languages"
+  },
+  {
+    "name": "Awesome Books",
+    "image": "https://raw.githubusercontent.com/Atril33/react-portfolio/desktop/src/Components/Images/awesome-book.png?token=GHSAT0AAAAAACFFUXTWLD5EZGJH4OKBOOFKZFY3BVQ",
+    "description": "In this Awesome Book Project, I utilized my HTML, CSS, and JS skills with advanced syntax (ES6) to create a dynamic website where users can store their book and author names",
+    "languages": ["html", "css", "js"],
+    "liveLink": "https://atril33.github.io/Awesome_books/",
+    "sourceCode": "https://github.com/Atril33/Awesome_books"
+  },
+  {
+    "name": "Leaderboard",
+    "image": "https://raw.githubusercontent.com/Atril33/react-portfolio/desktop/src/Components/Images/leaderboard.png?token=GHSAT0AAAAAACFFUXTXWC3MN7BE7KDBPEP2ZFY3D7A",
+    "description": "The Leaderboard is a web app developed using HTML, CSS & JS, utilizing an API for saving user game scores with names and comparing them with others' scores on the internet. It offers a platform for permanent score storage and comparison.",
+    "languages": ["html", "css", "js", "api"],
+    "liveLink": "https://atril33.github.io/Leaderboard/dist/",
+    "sourceCode": "https://github.com/Atril33/leaderboard"
+  },
+  {
+    "name": "Math Megican",
+    "image": "https://raw.githubusercontent.com/Atril33/react-portfolio/desktop/src/Components/Images/Math-megician.png?token=GHSAT0AAAAAACFFUXTWLGWBCP5HNXGQZICKZFY24KA",
+    "description": "Math Megican is a simple app that uses React.js to help with basic math problems. It also has educational quotes that make it fun and engaging for users.",
+    "languages": ["react", "css", "api"],
+    "liveLink": "https://math-magicians-1hc0hih6a-atril33.vercel.app/",
+    "sourceCode": "https://github.com/Atril33/math-magicians"
   }
+  
 ]

@@ -1,31 +1,14 @@
-/* import { useDispatch } from 'react-redux';
-import { useEffect } from 'react'; */
-/* import { Route, Routes } from 'react-router-dom'; */
-/* import { countryDataFetch } from './Redux/project/projectSlice'; */
-import Header from './Components/Header';
-import Portfolio from './Components/Portfolio';
-import About from './Components/About';
-import Contact from './Components/Contact';
+import { Route, Routes } from 'react-router-dom';
 import './Components/Style/style.css';
+import ProjectInfo from './Components/ProjectInfo';
+import Home from './Components/Home';
 
 function App() {
-/*   const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(countryDataFetch());
-  }); */
-
   return (
-    <>
-      <Header />
-      <Portfolio />
-      <About />
-      <Contact />
-    </>
-  /*  <Routes>
+  <Routes> 
       <Route path="/" element={<Home />} />
-      <Route path="/country/:name" element={<InfoPage />} />
-    </Routes> */
+      <Route path="/project/:name" element={<ProjectInfo />} />
+    </Routes>
   );
 }
 

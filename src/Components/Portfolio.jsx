@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import project1 from './Images/QR-Code-Generator.png';
+import { Link } from 'react-router-dom'
 
 
 const Portfolio = () => {
@@ -18,7 +18,7 @@ const Portfolio = () => {
       <li className="language-list">{language}</li>
     ))}
    </ul>
-   <div className="project-button">See More</div>
+   <Link to={`project/${project.name}`} className="project-button">See More</Link>
  </div>
         ))}
      

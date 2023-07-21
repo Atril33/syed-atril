@@ -232,6 +232,7 @@ main::before {
 .preview-image {
   width: 270px;
   height: 230px;
+  object-fit: fixed;
   margin: 10px;
 }
 

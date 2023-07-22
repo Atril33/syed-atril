@@ -8,21 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  overflow: hidden;
 }
-
-/* .projectinfo-container::before {
-    position: absolute;
-    content: "";
-    width: 400px;
-    height: 400px;
-    left: -100px;
-    top: -100px;
-    border-radius: 50%;
-    background-image: linear-gradient(to left, rgb(236, 140, 156), rgb(122, 109, 236));
-    z-index: -2;
-} */
 
 .projectinfo-backimg,
 .projectinfo-closeimg {
@@ -56,7 +42,34 @@ body {
   border: 1.5px solid #ece9e9;
   border-radius: 8px;
   position: relative;
+  overflow: hidden;
+  z-index: 2;
 }
+
+
+.mediuminfo-container::before {
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 300px;
+  right: -100px;
+  bottom: -100px;
+  border-radius: 50%;
+  background: rgba(0, 89, 255, 0.384);
+  z-index: -1;
+} 
+
+.mediuminfo-container::after{
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 300px;
+  right: -105px;
+  bottom: -110px;
+  border-radius: 50%;
+  background: #7b9ad3;
+  z-index: -1;
+} 
 
 .projectinfo-name {
   color: #464545;
@@ -66,7 +79,7 @@ body {
 
 .projectinfo-image {
   width: 700px;
-  height: 400px;
+  height: 100%;
   border-radius: 3px;
   margin-bottom: 10px;
 }
@@ -82,7 +95,7 @@ body {
 .projectinfo-language-list {
   display: inline-block;
   margin: 8px 8px;
-  background: #dddbdb;
+  background: #f3f3f3;
   font-size: 13px;
   font-weight: 500;
   padding: 5px 14px;
@@ -98,13 +111,80 @@ body {
 }
 
 .projectinfo-button {
-  background: #1198f6;
-  font-size: 14px;
+  background: #1197f6c5;
+  font-size: 16px;
   font-size: 500;
   padding: 5px 10px;
   width: 100px;
   text-align: center;
   margin: 0 20px;
   border-radius: 2px;
-  border: 1px solid #464545;
+  transition: all 0.5s;
+}
+
+.projectinfo-button:hover {
+ background: #1198f6;;
+}
+.projectinfo-a {
+  color: #fff;
+}
+
+@media screen and (max-width: 835px) {
+  .projectinfo-image,
+  .projectinfo-description {
+    width: 600px;
+  }
+
+}
+
+@media screen and (max-width: 735px) {
+  .projectinfo-image,
+  .projectinfo-description {
+    width: 97%;
+  }
+
+  .projectinfo-image {
+    height: 100%;
+  }
+
+  .projectinfo-language {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 535px) {
+ .mediuminfo-container {
+   padding: 20px;
+  }
+
+  .projectinfo-backimg,
+  .projectinfo-closeimg {
+    width: 15px;
+    top: 7px;
+  }
+    .projectinfo-backimg {
+      left: 7px;
+    }
+    
+    .projectinfo-closeimg {
+      right: 7px;
+    }
+
+  .projectinfo-name  {
+  font-size: 18px;
+  margin-bottom: 10px;
+  }
+
+  .projectinfo-language {
+    text-align: center;
+  }
+.projectinfo-language-list {
+   width: 70px;
+}
+ 
+.projectinfo-button {
+  font-size: 13px;
+  width: 80px;
+}
 }

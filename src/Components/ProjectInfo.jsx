@@ -25,8 +25,8 @@ const ProjectInfo = () => {
     ))}
    </ul>
    <div className="buttons-holder">
-   <div className="projectinfo-button"><a href={getProject.liveLink}>View Live</a></div>
-   <div className="projectinfo-button"><a href={getProject.sourceCode}>View Code</a></div>
+   <div className="projectinfo-button"><a href={getProject.liveLink} className="projectinfo-a">View Live</a></div>
+   <div className="projectinfo-button"><a href={getProject.sourceCode} className="projectinfo-a">View Code</a></div>
    </div>
         </div>
         </section>

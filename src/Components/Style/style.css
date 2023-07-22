@@ -21,18 +21,29 @@ header {
   overflow: hidden;
 }
 
-header::after {
+header::before {
   position: absolute;
   content: "";
   width: 300px;
   height: 300px;
+  left: -100px;
+  bottom: -100px;
   border-radius: 50%;
-  background: #259be9;
-  left: -150px;
-  bottom: -150px;
-  filter: blur(120px);
+  background: rgba(0, 89, 255, 0.384);
   z-index: 1;
-}
+} 
+
+header::after{
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 300px;
+  left: -105px;
+  bottom: -110px;
+  border-radius: 50%;
+  background: #7b9ad3;
+  z-index: 1;
+} 
 
 nav {
   position: fixed;
@@ -189,7 +200,8 @@ main::before {
 
 .project {
   width: 100%;
-  height: 370px;
+  height: auto;
+  padding-bottom: 10px;
   max-width: 290px;
   background: #ffffff;
   display: flex;
@@ -231,8 +243,7 @@ main::before {
 
 .preview-image {
   width: 270px;
-  height: 230px;
-  object-fit: fixed;
+  height: auto;
   margin: 10px;
 }
 
@@ -577,6 +588,10 @@ form {
   }
 
   header::after {
+    display: none;
+  }
+
+  header::before {
     display: none;
   }
 

@@ -1,0 +1,191 @@
+body {
+  height: auto;
+}
+
+.projectinfo-container {
+  background: #259be96e;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectinfo-backimg,
+.projectinfo-closeimg {
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+  padding: 13px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.projectinfo-backimg {
+  left: 10px;
+}
+
+.projectinfo-closeimg {
+  right: 10px;
+}
+
+.mediuminfo-container {
+  margin: 100px 0;
+  width: 80%;
+  padding: 50px 20px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  border: 1.5px solid #ece9e9;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.mediuminfo-container::before {
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 300px;
+  right: -100px;
+  bottom: -100px;
+  border-radius: 50%;
+  background: rgba(0, 89, 255, 0.384);
+  z-index: -1;
+}
+
+.mediuminfo-container::after {
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 300px;
+  right: -105px;
+  bottom: -110px;
+  border-radius: 50%;
+  background: #7b9ad3;
+  z-index: -1;
+}
+
+.projectinfo-name {
+  color: #464545;
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+.projectinfo-image {
+  width: 700px;
+  height: 100%;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.projectinfo-description {
+  width: 700px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 13px;
+  color: #464545;
+}
+
+.projectinfo-language-list {
+  display: inline-block;
+  margin: 8px 8px;
+  background: #f3f3f3;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 5px 14px;
+  width: 100px;
+  color: #464545;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.buttons-holder {
+  display: flex;
+  margin-top: 30px;
+}
+
+.projectinfo-button {
+  background: #1197f6c5;
+  font-size: 16px;
+  font-size: 500;
+  padding: 5px 10px;
+  width: 100px;
+  text-align: center;
+  margin: 0 20px;
+  border-radius: 2px;
+  transition: all 0.5s;
+}
+
+.projectinfo-button:hover {
+  background: #1198f6;
+}
+
+.projectinfo-a {
+  color: #fff;
+}
+
+@media screen and (max-width: 835px) {
+  .projectinfo-image,
+  .projectinfo-description {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .projectinfo-image,
+  .projectinfo-description {
+    width: 97%;
+  }
+
+  .projectinfo-image {
+    height: 100%;
+  }
+
+  .projectinfo-language {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .mediuminfo-container {
+    padding: 20px;
+  }
+
+  .projectinfo-backimg,
+  .projectinfo-closeimg {
+    width: 15px;
+    top: 7px;
+  }
+
+  .projectinfo-backimg {
+    left: 7px;
+  }
+
+  .projectinfo-closeimg {
+    right: 7px;
+  }
+
+  .projectinfo-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .projectinfo-language {
+    text-align: center;
+  }
+
+  .projectinfo-language-list {
+    width: 70px;
+  }
+
+  .projectinfo-button {
+    font-size: 13px;
+    width: 80px;
+  }
+}

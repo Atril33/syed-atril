@@ -31,9 +31,9 @@ header::before {
   border-radius: 50%;
   background: rgba(0, 89, 255, 0.384);
   z-index: 1;
-} 
+}
 
-header::after{
+header::after {
   position: absolute;
   content: "";
   width: 300px;
@@ -43,7 +43,7 @@ header::after{
   border-radius: 50%;
   background: #7b9ad3;
   z-index: 1;
-} 
+}
 
 nav {
   position: fixed;
@@ -181,7 +181,7 @@ main::before {
   right: -150px;
   bottom: -100px;
   background: #ebba346e;
-  border: 1.5px solid #000000;
+  border: 1.5px solid #000;
   transform: rotate(30deg);
   z-index: -1;
 }
@@ -203,7 +203,7 @@ main::before {
   height: auto;
   padding-bottom: 10px;
   max-width: 290px;
-  background: #ffffff;
+  background: #fff;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -221,14 +221,14 @@ main::before {
 }
 
 .project-button {
- margin-left: 10px;
- width: 100px;
- background: #1198f6;
- text-align: center;
- padding: 3px 0;
- color: #fff;
- border-radius: 2px;
- cursor: pointer;
+  margin-left: 10px;
+  width: 100px;
+  background: #1198f6;
+  text-align: center;
+  padding: 3px 0;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .language-list {

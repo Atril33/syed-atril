@@ -20,8 +20,8 @@ const ProjectInfo = () => {
         <img src={getProject.image} alt={getProject.name} className="projectinfo-image" />
         <p className="projectinfo-description">{getProject.description}</p>
         <ul className="projectinfo-language">
-          {getProject.languages.map((language, index) => (
-            <li className="projectinfo-language-list">{language}</li>
+          {getProject.languages.map((language) => (
+            <li className="projectinfo-language-list" key={language.name}>{language}</li>
           ))}
         </ul>
         <div className="buttons-holder">

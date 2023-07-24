@@ -40,7 +40,7 @@ const Header = () => {
               I’m a Front-End Web Developer!🚀 I can help you build a product,
               feature or website Look through some of my work and experience!
               If you like what you see and have a project you need coded,
-              don’t hestiate to contact me.
+              don’t hesitate to contact me.
             </p>
             <div className="resume-button mobile-resume"><a href="https://docs.google.com/document/d/1fZZCECSqm6X3dd4_IPmgsvxgArtmKxxtvHjQ2kIWi28/edit?usp=sharing" className="resume-link">my resume</a></div>
           </div>

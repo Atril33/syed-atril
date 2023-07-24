@@ -7,20 +7,20 @@ import CountryDtImg from '../Images/country_project.png';
 
 const data = [
   {
-    name: 'QR Code Generator',
-    image: `${QrCodeImg}`,
-    description: 'QR Code Generator is a website that allows users to generate custom QR codes by entering text or links. Developed using HTML, CSS, and JS, it uses an API for code generation. This project makes it easy for users to create QR codes for their websites, social media profiles, and other links.',
-    languages: ['html', 'css', 'js', 'api'],
-    liveLink: 'https://atril33.github.io/QR_Code_Generator/',
-    sourceCode: 'https://github.com/Atril33/QR_Code_Generator',
-  },
-  {
     name: 'World Top Languages',
     image: `${WordTopImg}`,
     description: 'World Top Languages is a website that shows you information about the most popular computer programming languages in the world and the best developers who use them. The website was made using HTML and CSS, which are computer languages used to create websites.',
     languages: ['html', 'css', 'js'],
     liveLink: 'https://atril33.github.io/World_top_languages/index.html',
     sourceCode: 'https://github.com/Atril33/World_top_languages',
+  },
+  {
+    name: 'Country Info App',
+    image: `${CountryDtImg}`,
+    description: 'The Country Info App is a fantastic application built using React, Redux, and CSS. It allows users to explore information about different countries around the world. By connecting to the Rest Countries API, the app retrieves accurate and up-to-date data, providing users with a comprehensive resource to learn about various nations.',
+    languages: ['react', 'redux', 'css', 'api'],
+    liveLink: 'https://country-details-2638nyvyi-atril33.vercel.app/',
+    sourceCode: 'https://github.com/Atril33/country-details',
   },
   {
     name: 'Awesome Books',
@@ -47,13 +47,14 @@ const data = [
     sourceCode: 'https://github.com/Atril33/math-magicians',
   },
   {
-    name: 'Country Info App',
-    image: `${CountryDtImg}`,
-    description: 'The Country Info App is a fantastic application built using React, Redux, and CSS. It allows users to explore information about different countries around the world. By connecting to the Rest Countries API, the app retrieves accurate and up-to-date data, providing users with a comprehensive resource to learn about various nations.',
-    languages: ['react', 'redux', 'css', 'api'],
-    liveLink: 'https://country-details-2638nyvyi-atril33.vercel.app/',
-    sourceCode: 'https://github.com/Atril33/country-details',
+    name: 'QR Code Generator',
+    image: `${QrCodeImg}`,
+    description: 'QR Code Generator is a website that allows users to generate custom QR codes by entering text or links. Developed using HTML, CSS, and JS, it uses an API for code generation. This project makes it easy for users to create QR codes for their websites, social media profiles, and other links.',
+    languages: ['html', 'css', 'js', 'api'],
+    liveLink: 'https://atril33.github.io/QR_Code_Generator/',
+    sourceCode: 'https://github.com/Atril33/QR_Code_Generator',
   },
+
 ];
 
 export default data;

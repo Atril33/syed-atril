@@ -49,8 +49,7 @@ nav {
   position: fixed;
   width: 100%;
   height: 65px;
-  background: #ffffff49;
-  backdrop-filter: blur(10px);
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -93,6 +92,7 @@ nav {
   font-weight: 500;
   cursor: pointer;
   text-transform: capitalize;
+  animation: attract 1s infinite;
 }
 
 .resume-link {
@@ -200,7 +200,7 @@ main::before {
 
 .project {
   width: 100%;
-  height: auto;
+  height: 355px;
   padding-bottom: 10px;
   max-width: 290px;
   background: #fff;
@@ -211,6 +211,7 @@ main::before {
 }
 
 .project-title {
+  margin-top: 30px;
   margin-left: 10px;
   font-size: 20px;
   color: #3d4349;
@@ -222,7 +223,7 @@ main::before {
 
 .project-button {
   margin-left: 10px;
-  width: 100px;
+  width: 94%;
   background: #1198f6;
   text-align: center;
   padding: 3px 0;
@@ -230,6 +231,17 @@ main::before {
   border-radius: 2px;
   cursor: pointer;
   transition: all 0.5s;
+  animation: attract 1s infinite;
+}
+
+@keyframes attract {
+  0% {
+    background: #1198f6;
+  }
+
+  100% {
+    background: red;
+  }
 }
 
 .project-button:hover {
@@ -240,7 +252,7 @@ main::before {
   display: inline-block;
   margin: 0 3px;
   padding: 2px 13px;
-  background: #f7f7f7;
+  background: #f3f2f2;
   color: #3d4349;
   font-size: 13px;
   border-radius: 2px;
@@ -248,7 +260,7 @@ main::before {
 
 .preview-image {
   width: 270px;
-  height: auto;
+  height: 200px;
   margin: 10px;
 }
 
@@ -296,7 +308,7 @@ main::before {
 .about-heading,
 .portfolio-heading,
 .contact-heading {
-  color: #fff;
+  color: #3d4349;
   font-size: 35px;
   text-align: center;
   z-index: 2;
@@ -304,6 +316,7 @@ main::before {
   margin: 20px 0;
 }
 
+/*
 .about-heading::after,
 .portfolio-heading::after,
 .contact-heading::after {
@@ -330,7 +343,7 @@ main::before {
   top: 0;
   background: #f3b20060;
   z-index: -1;
-}
+} */
 
 .about-des {
   width: 60%;
@@ -441,10 +454,9 @@ main::before {
 .skill-name {
   width: 100%;
   padding: 10px 0;
-  background: #f7f7f7;
+  background: #f3f2f2;
   font-size: 14px;
   font-weight: 400;
-  text-transform: uppercase;
   text-align: center;
   cursor: pointer;
 }

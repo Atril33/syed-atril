@@ -4,17 +4,12 @@ const About = () => (
       <div className="about-tab">
         <h2 className="about-heading">About Me</h2>
         <p className="about-des">
-
-          Hey there! I&apos;m Syed Atril, a Front End Web Developer skilled in HTML, CSS,
-          and JavaScript.
-          I love diving into projects that embrace different cultures and people.
-          My coding adventure
-          began at 16, and since then, I&apos;ve crafted numerous projects, both on my own
-          and alongside
-          amazing individuals from diverse backgrounds. With my wealth of skills and experiences,
-          I&apos;m here to bring your ideas
-          to life and create something truly special. Let&apos;s collaborate and make magic happen!
-
+        Hello, I&apos;m Syed Atril, a Full-stack Developer trained by Microverse, a remote-based online school. I possess a robust skill set that includes HTML, CSS, Tailwind CSS, JavaScript, React, Redux, 
+        Ruby, Ruby on Rails, and database technologies. I&apos;ve successfully applied these skills to create
+         projects, both independently and collaboratively, with diverse team members from around 
+         the globe. Utilizing tools like Zoom, I&apos;ve embraced the full remote experience, connecting
+          with individuals worldwide, while Git has been the backbone of version control for all 
+          my projects.
         </p>
         <div className="social-links">
           <h3 className="linkedin"><a href="https://www.linkedin.com/in/syed-atril/" className="a-link">Linkedin</a></h3>
@@ -26,20 +21,35 @@ const About = () => (
       <div className="skill-tab">
         <h2 className="skill-heading">My Skills</h2>
         <div className="skills-cont">
-          <h3 className="skill-name">Html</h3>
-          <h3 className="skill-name">Css</h3>
+          <h3 className="skill-name">HTML</h3>
+          <h3 className="skill-name">CSS</h3>
+          <h3 className="skill-name">Tailwind CSS</h3>
           <h3 className="skill-name">JavaScript</h3>
           <h3 className="skill-name">React</h3>
           <h3 className="skill-name">Redux</h3>
           <h3 className="skill-name">Ruby</h3>
-          <h3 className="skill-name">Responsive Design</h3>
+          <h3 className="skill-name">Ruby on Rails</h3>
+          <h3 className="skill-name">MySQL</h3>
+          <h3 className="skill-name">PostgreSQL</h3>
           <h3 className="skill-name">Git</h3>
           <h3 className="skill-name">GitHub</h3>
-          <h3 className="skill-name">Seo</h3>
-          <h3 className="skill-name">Adobe</h3>
-          <h3 className="skill-name">Testing</h3>
-          <h3 className="skill-name">SCSS</h3>
-          <h3 className="skill-name">Remote Working</h3>
+          <h3 className="skill-name">Visualization</h3>
+          <h3 className="skill-name">Web Design</h3>
+          <h3 className="skill-name">Responsive Design</h3>
+          <h3 className="skill-name">Chrome Dev Tools</h3>
+          <h3 className="skill-name">Render</h3>
+          <h3 className="skill-name">Vercel</h3>
+          <h3 className="skill-name">Jest</h3>
+          <h3 className="skill-name">Capybara</h3>
+          <h3 className="skill-name">RSpec</h3>
+          <h3 className="skill-name">MVC</h3>
+          <h3 className="skill-name">OOP</h3>
+          <h3 className="skill-name">Unit Testing</h3>
+          <h3 className="skill-name">Postman</h3>
+          <h3 className="skill-name">VSCode</h3>
+          <h3 className="skill-name">React Dev Tools</h3>
+          <h3 className="skill-name">Redux Dev Tools</h3>
+
           <h3 className="skill-name plus">+</h3>
         </div>
       </div>

@@ -17,7 +17,7 @@ const Portfolio = () => {
                 <li className="language-list" key={language.name}>{language}</li>
               ))}
             </ul>
-            <Link to={`project/${project.name}`} className="project-button">See More</Link>
+            <Link to={`project/${project.name}`} className="project-button">See the Magic</Link>
           </div>
         ))}
 

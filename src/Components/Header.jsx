@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import menuBar from './Images/menu-bars.png';
 import backImage from './Images/code_image.jpg';
 import closeMenu from './Images/close_menu.png';
@@ -37,7 +37,7 @@ const Header = () => {
               Hi👋I’m Syed
             </h2>
             <p className="info-des">
-              I’m a Front-End Web Developer!🚀 I can help you build a product,
+              I’m a Full-stack Web Developer!🚀 I can help you build a product,
               feature or website Look through some of my work and experience!
               If you like what you see and have a project you need coded,
               don’t hesitate to contact me.

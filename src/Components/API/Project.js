@@ -39,9 +39,9 @@ const data = [
     sourceCode: 'https://github.com/Atril33/leaderboard',
   },
   {
-    name: 'Math Megican',
+    name: 'Math Magician',
     image: `${MathMegImg}`,
-    description: 'Math Megican is a simple app that uses React.js to help with basic math problems. It also has educational quotes that make it fun and engaging for users.',
+    description: 'Math Magician is a simple app that uses React.js to help with basic math problems. It also has educational quotes that make it fun and engaging for users.',
     languages: ['react', 'css', 'api'],
     liveLink: 'https://math-magicians-1hc0hih6a-atril33.vercel.app/',
     sourceCode: 'https://github.com/Atril33/math-magicians',

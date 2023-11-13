@@ -1,12 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import './Components/Style/style.css';
 import ProjectInfo from './Components/ProjectInfo';
-import ReactGA from "react-ga";
 import Home from './Components/Home';
-
-
-const TRACKING_ID = "G-VP7DB551DG";
-ReactGA.initialize(TRACKING_ID)
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -15,7 +11,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/project/:name" element={<ProjectInfo />} />
       </Routes>
-    </>
+      <Analytics />
+      </>
   );
 }
 

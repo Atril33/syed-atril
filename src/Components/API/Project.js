@@ -4,8 +4,17 @@ import AweBookImg from '../Images/awesome-book.png';
 import LeaderboardImg from '../Images/leaderboard.png';
 import MathMegImg from '../Images/Math-megician.png';
 import CountryDtImg from '../Images/country_project.png';
+import DocConnectImg from '../Images/DocConnect.png'
 
 const data = [
+  {
+    name: 'DocConnect Full-stack Website',
+    image: `${DocConnectImg}`,
+    description: 'DocConnect, an intuitive platform, facilitates seamless patient-doctor appointment scheduling. Developed with Ruby on Rails, React, and Redux, it ensures a secure backend, while the frontend delivers a dynamic and user-friendly experience, prioritizing accessibility and efficiency in healthcare access.',
+    languages: ['CSS', 'Twinline CSS','React', 'Redux', 'Ruby', 'Ruby on Rails',],
+    liveLink: 'https://dev--jovial-longma-dea964.netlify.app/',
+    sourceCode: 'https://github.com/Atril33/DocConnect-Frontend',
+  },
   {
     name: 'World Top Languages',
     image: `${WordTopImg}`,

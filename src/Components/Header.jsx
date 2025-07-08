@@ -1,22 +1,38 @@
 import { useEffect } from 'react';
 import keyboardClickSound from './assets/single-keyboard-click.wav';
-import Navbar from './navbar';
-
+import Navbar from './Navbar';
 
 const Header = () => {
-
   useEffect(() => {
     const roleTitle = document.querySelector('.role-title');
     const eachButton = document.querySelectorAll('.key');
-    let roleTitleArr = ['F', 'r', 'o', 'n', 't', 'e', 'n', 'd', ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'];
+    let roleTitleArr = [
+      'F',
+      'r',
+      'o',
+      'n',
+      't',
+      'e',
+      'n',
+      'd',
+      ' ',
+      'D',
+      'e',
+      'v',
+      'e',
+      'l',
+      'o',
+      'p',
+      'e',
+      'r',
+    ];
     let keyboardButtons = [];
     let finalIndices = [];
-
 
     eachButton.forEach((button, index) => {
       keyboardButtons.push({
         key: button.textContent,
-        index: index
+        index: index,
       });
 
       button.addEventListener('click', () => {
@@ -42,70 +58,66 @@ const Header = () => {
           finalIndices.push(button.index);
         }
       });
-
     });
 
     let typingSpeed = 500;
     let backTypingSpeed = 50;
     let contentBuffer = [];
 
-
-
     finalIndices.forEach((index, i) => {
       const typingAnimation = () => {
-        setTimeout(() => {
-          eachButton[index].classList.add('active');
+        setTimeout(
+          () => {
+            eachButton[index].classList.add('active');
 
-          contentBuffer.push(roleTitleArr[i]);
+            contentBuffer.push(roleTitleArr[i]);
 
-          roleTitle.style.setProperty('--content', `'${contentBuffer.join('')}'`);
+            roleTitle.style.setProperty(
+              '--content',
+              `'${contentBuffer.join('')}'`,
+            );
 
-          setTimeout(() => {
-            eachButton[index].classList.remove('active');
-          }, typingSpeed);
-
-
-
-
-
-        }, i * typingSpeed + 1000);
-
-
-
+            setTimeout(() => {
+              eachButton[index].classList.remove('active');
+            }, typingSpeed);
+          },
+          i * typingSpeed + 1000,
+        );
       };
 
       typingAnimation();
 
       function backTypingAnimation() {
-        setTimeout(() => {
-          eachButton[13].classList.add('backsapce-active');
-          contentBuffer.pop();
-          roleTitle.style.setProperty('--content', `'${contentBuffer.join('')}'`);
+        setTimeout(
+          () => {
+            eachButton[13].classList.add('backsapce-active');
+            contentBuffer.pop();
+            roleTitle.style.setProperty(
+              '--content',
+              `'${contentBuffer.join('')}'`,
+            );
 
-          setTimeout(() => {
-            eachButton[13].classList.remove('backsapce-active');
-          }, backTypingSpeed * roleTitleArr.length);
-
-        }, i * backTypingSpeed + roleTitleArr.length * typingSpeed + 2000);
-
+            setTimeout(() => {
+              eachButton[13].classList.remove('backsapce-active');
+            }, backTypingSpeed * roleTitleArr.length);
+          },
+          i * backTypingSpeed + roleTitleArr.length * typingSpeed + 2000,
+        );
       }
 
       backTypingAnimation();
 
-      setInterval(() => {
-        contentBuffer = [];
-        roleTitle.style.setProperty('--content', "''");
-        typingAnimation();
-        backTypingAnimation();
-      }, typingSpeed * roleTitleArr.length + 7000);
+      setInterval(
+        () => {
+          contentBuffer = [];
+          roleTitle.style.setProperty('--content', "''");
+          typingAnimation();
+          backTypingAnimation();
+        },
+        typingSpeed * roleTitleArr.length + 7000,
+      );
     });
-
-
-
-
-
-
-  }, [])
+  }, []);
 
   return (
     <>
@@ -114,42 +126,61 @@ const Header = () => {
         <div className="header-container">
           <div className="header-info">
             <h2 className="info-title">
-              Hi I'm <span>Syed Atril</span><br />
-              a <span
+              Hi I'm <span>Syed Atril</span>
+              <br />a{' '}
+              <span
                 className="role-title"
                 style={{
-                  '--content': "''"
+                  '--content': "''",
                 }}
               >
                 Frontend Developer
               </span>
             </h2>
-
-
-
           </div>
-
         </div>
-
-
-
-
 
         <div className="keyboard-container">
           <div className="keyboard-row">
-            <div className="key">~ <span>`</span></div>
-            <div className="key">! <span>1</span></div>
-            <div className="key">@ <span>2</span></div>
-            <div className="key"># <span>3</span></div>
-            <div className="key">$ <span>4</span></div>
-            <div className="key">% <span>5</span></div>
-            <div className="key">^ <span>6</span></div>
-            <div className="key">& <span>7</span></div>
-            <div className="key">* <span>8</span></div>
-            <div className="key">( <span>9</span></div>
-            <div className="key">) <span>0</span></div>
-            <div className="key">_ <span>-</span></div>
-            <div className="key">+ <span>=</span></div>
+            <div className="key">
+              ~ <span>`</span>
+            </div>
+            <div className="key">
+              ! <span>1</span>
+            </div>
+            <div className="key">
+              @ <span>2</span>
+            </div>
+            <div className="key">
+              # <span>3</span>
+            </div>
+            <div className="key">
+              $ <span>4</span>
+            </div>
+            <div className="key">
+              % <span>5</span>
+            </div>
+            <div className="key">
+              ^ <span>6</span>
+            </div>
+            <div className="key">
+              & <span>7</span>
+            </div>
+            <div className="key">
+              * <span>8</span>
+            </div>
+            <div className="key">
+              ( <span>9</span>
+            </div>
+            <div className="key">
+              ) <span>0</span>
+            </div>
+            <div className="key">
+              _ <span>-</span>
+            </div>
+            <div className="key">
+              + <span>=</span>
+            </div>
             <div className="key backspace">Backspace</div>
           </div>
 
@@ -165,8 +196,16 @@ const Header = () => {
             <div className="key">I</div>
             <div className="key">O</div>
             <div className="key">P</div>
-            <div className="key"> {'{'}<span>{'['}</span></div>
-            <div className="key"> {'}'}<span>{']'}</span></div>
+            <div className="key">
+              {' '}
+              {'{'}
+              <span>{'['}</span>
+            </div>
+            <div className="key">
+              {' '}
+              {'}'}
+              <span>{']'}</span>
+            </div>
           </div>
 
           <div className="keyboard-row">
@@ -176,13 +215,20 @@ const Header = () => {
             <div className="key">D</div>
             <div className="key">F</div>
             <div className="key">G</div>
-                 <div className="key">H</div>
+            <div className="key">H</div>
             <div className="key">J</div>
             <div className="key">K</div>
             <div className="key">L</div>
-            <div className="key">: <span>;</span></div>
-            <div className="key">"<span>'</span></div>
-            <div className="key"> |<span>\</span></div>
+            <div className="key">
+              : <span>;</span>
+            </div>
+            <div className="key">
+              "<span>'</span>
+            </div>
+            <div className="key">
+              {' '}
+              |<span>\</span>
+            </div>
             <div className="key">Enter</div>
           </div>
 
@@ -195,9 +241,15 @@ const Header = () => {
             <div className="key">B</div>
             <div className="key">N</div>
             <div className="key">M</div>
-            <div className="key">{'<'} <span>,</span></div>
-            <div className="key">{'>'} <span>.</span></div>
-            <div className="key">?<span>/</span></div>
+            <div className="key">
+              {'<'} <span>,</span>
+            </div>
+            <div className="key">
+              {'>'} <span>.</span>
+            </div>
+            <div className="key">
+              ?<span>/</span>
+            </div>
             <div className="key">Shift</div>
           </div>
 
@@ -209,12 +261,8 @@ const Header = () => {
             <div className="key">Alt</div>
             <div className="key">&#x1FA9F;</div>
             <div className="key">Ctr</div>
-
           </div>
-
-
         </div>
-
       </header>
     </>
   );

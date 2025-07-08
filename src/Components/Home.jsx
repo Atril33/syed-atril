@@ -9,7 +9,6 @@ const Home = () => (
     <Portfolio />
     <About />
     <Contact />
- 
   </>
 );
 

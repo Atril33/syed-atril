@@ -1,13 +1,15 @@
 <a name="readme-top"></a>
+
 <div align="center">
   <img src="https://github.com/Atril33/react-portfolio/blob/dev/Portfolio%20Preview.png" width="100%" height="auto" />
   </div>
 
-  # 📖 React Portfolio 
+# 📖 React Portfolio
 
 > Welcome to my Portfolio! Here, I proudly showcase a collection of my previous projects, demonstrating my skills and passion for creating captivating web experiences. Dive in to explore the creative world I've crafted, and feel free to connect with me for your next exciting project!
 
-## 🛠 Built With 
+## 🛠 Built With
+
 <details>
   <summary>Client</summary>
   <ul>
@@ -19,7 +21,7 @@
 </details>
 <!-- Features -->
 
-### Key Features 
+### Key Features
 
 - **Responsive Design**
 - **Project Showcase**
@@ -38,20 +40,25 @@
 ### Prerequisites
 
 In order to run this project you need:
+
 - **A PC with any Browser (Chrome, Opera, & FireFox, etc)**
 
 ### Setup
 
 Clone this repository to your desired folder:
-``` bash
+
+```bash
   https://github.com/Atril33/react-portfolio.git
 ```
 
 ### Install
+
 In order to check tests:
+
 ```sh
   npm i
 ```
+
 ```sh
   npm start
 ```

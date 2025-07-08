@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-
 
 * {
   padding: 0;
@@ -24,10 +23,9 @@ header {
   z-index: 9999;
 }
 
-
 header::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 400px;
   background-image: url('../assets/header-cover-image.svg');
@@ -35,9 +33,6 @@ header::before {
   bottom: -400px;
   z-index: -1;
 }
-
-
-
 
 nav {
   position: fixed;
@@ -153,10 +148,7 @@ nav {
   color: #ec0f0ff5;
   visibility: visible;
   z-index: 0;
-
 }
-
-
 
 .info-des {
   font-size: 14px;
@@ -240,13 +232,12 @@ nav {
   color: #fff;
 }
 
-
 .key.space {
   flex-grow: 8;
 }
 
 .key.space::before {
-  content: "Space";
+  content: 'Space';
 }
 
 .portfolio-section {
@@ -263,7 +254,7 @@ nav {
 
 .portfolio-section::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 270px;
   height: 270px;
   border-radius: 50px;
@@ -277,7 +268,7 @@ nav {
 
 .portfolio-section::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 270px;
   height: 270px;
   border-radius: 50px;
@@ -287,7 +278,6 @@ nav {
   background: #ffac59bf;
   z-index: -1;
 }
-
 
 .portfolio-cont {
   display: grid;
@@ -315,8 +305,6 @@ nav {
 .project:hover {
   box-shadow: rgb(149 157 165 / 20%) 0 8px 24px;
 }
-
-
 
 .project-title {
   margin: 10px;
@@ -346,7 +334,6 @@ nav {
   color: #fff;
   width: 100px;
   margin: 10px;
-
 }
 
 .project-button:hover {
@@ -380,7 +367,7 @@ nav {
 
 .about-container::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -391,7 +378,7 @@ nav {
 
 .about-container::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -446,7 +433,7 @@ nav {
 .portfolio-heading::before,
 .contact-heading::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   left: 0;
@@ -456,15 +443,15 @@ nav {
 }
 
 .about-heading::before {
-  content: "About Me";
+  content: 'About Me';
 }
 
 .portfolio-heading::before {
-  content: "Portfolio";
+  content: 'Portfolio';
 }
 
 .contact-heading::before {
-  content: "Contact";
+  content: 'Contact';
 }
 
 .about-des {
@@ -535,7 +522,7 @@ nav {
 
 .skill-tab::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 180px;
   height: 180px;
   border: 1px solid #000;
@@ -546,7 +533,7 @@ nav {
 
 .skill-tab::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 170px;
   height: 170px;
   background: #259be96e;
@@ -606,7 +593,7 @@ nav {
 
 .contact-container::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 500px;
   height: 500px;
   border-radius: 50%;
@@ -618,7 +605,7 @@ nav {
 
 .contact-container::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 500px;
   height: 500px;
   border-radius: 50%;
@@ -746,8 +733,6 @@ form {
     margin-top: 150px;
   }
 
-
-
   .header-info {
     width: 100%;
     margin-top: 100px;
@@ -756,7 +741,6 @@ form {
   header::after {
     display: none;
   }
-
 
   .info-title {
     font-size: 30px;
@@ -811,11 +795,10 @@ form {
     display: inline;
     visibility: hidden;
     text-align: left;
-
   }
 
   .info-title .role-title::after {
-    content: "Frontend Developer";
+    content: 'Frontend Developer';
     position: absolute;
     visibility: visible;
     transform: rotate(-362deg);
@@ -823,7 +806,6 @@ form {
     left: 0;
     top: 0;
     z-index: -1;
-
   }
 
   .info-title {
@@ -834,7 +816,6 @@ form {
     display: block;
     height: 0;
   }
-
 
   .project-title {
     font-size: 40px;

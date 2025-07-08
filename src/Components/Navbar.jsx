@@ -33,7 +33,7 @@ const Navbar = () => {
         </li>
         <li className="nav-item resume-button">
           <a
-            href="https://docs.google.com/document/d/1fZZCECSqm6X3dd4_IPmgsvxgArtmKxxtvHjQ2kIWi28/edit?usp=sharing"
+            href="/syed-atril.pdf" download="syed-atril-resume.pdf"
             className="resume-link"
           >
             my resume{' '}
@@ -78,7 +78,7 @@ const Navbar = () => {
           </li>
           <li className="nav-item-mobile resume-button">
             <a
-              href="https://docs.google.com/document/d/1fZZCECSqm6X3dd4_IPmgsvxgArtmKxxtvHjQ2kIWi28/edit?usp=sharing"
+              href="syed-atril.pdf" download="syed-atril-resume.pdf"
               className="resume-link"
             >
               my resume{' '}

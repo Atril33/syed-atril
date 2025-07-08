@@ -17,19 +17,19 @@ const Navbar = () => {
       </h1>
       <ul className="nav-list">
         <li className="nav-item">
-          <a href="/#portfolio" className="a-link">
+          <Link to="/" className="a-link" state={{ scrollTo: 'portfolio' }}>
             portfolio
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="/#about" className="a-link">
+          <Link to="/" className="a-link" state={{ scrollTo: 'about' }}>
             about
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="/#contact" className="a-link">
+          <Link to="/" className="a-link" state={{ scrollTo: 'contact' }}>
             contact
-          </a>
+          </Link>
         </li>
         <li className="nav-item resume-button">
           <a
@@ -62,19 +62,19 @@ const Navbar = () => {
             onClick={toggleMenu}
           />
           <li className="nav-item-mobile">
-            <a href="/#portfolio" className="a-link" onClick={toggleMenu}>
+            <Link to="/" className="a-link" onClick={toggleMenu} state={{scrollTo: 'portfolio'}}>
               portfolio
-            </a>
+            </Link>
           </li>
           <li className="nav-item-mobile">
-            <a href="/#about" className="a-link" onClick={toggleMenu}>
+            <Link to="/" className="a-link" onClick={toggleMenu} state={{ scrollTo: 'about'}}>
               about
-            </a>
+            </Link>
           </li>
           <li className="nav-item-mobile">
-            <a href="/#contact" className="a-link" onClick={toggleMenu}>
+            <Link to="/" className="a-link" onClick={toggleMenu} state={{ scrollTo: 'contact'}}>
               contact
-            </a>
+            </Link>
           </li>
           <li className="nav-item-mobile resume-button">
             <a

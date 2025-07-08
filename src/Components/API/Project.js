@@ -1,5 +1,5 @@
 import PDImg from '../assets/project-one-cover-image.png';
-import PDSearchFilter from '../assets/search-functionality-clip.mp4';
+import PDSearchFilter from '../assets/project-search-filter-functionality.png';
 import PDProductImagePopupSlider from '../assets/product-page-image-popup-slider.mp4';
 import PDZoomMiror from '../assets/product-page-zoom-miror-functionality.mp4';
 import SoftStudioServicePage from '../assets/services-page-project-two.mp4';
@@ -20,7 +20,7 @@ const data = [
       },
       {
         moreInfo:
-          'Developed key functionalities, including a dynamic search filter, using JavaScript—demonstrated clearly in the video above for enhanced user interaction and efficiency.',
+          'Developed key functionalities, including a dynamic search filter, using JavaScript—demonstrated clearly in the image above for enhanced user interaction and efficiency.',
         moreDetail: PDSearchFilter,
       },
       {
@@ -36,7 +36,7 @@ const data = [
     ],
   },
   {
-    name: 'Soft Studios',
+    name: 'Soft-Studios',
     description:
       'Redesigned the service pages and updated the overall styling of the SoftStudio website to create a cohesive, modern look. Improved responsiveness across devices, ensuring a consistent and professional appearance that enhanced visual appeal and better showcased the platform’s specialized engineering services.',
     languages: ['HTML', 'CSS', 'JavaScript'],
@@ -51,7 +51,7 @@ const data = [
   },
 
   {
-    name: 'CMS Dashboard',
+    name: 'CMS-Dashboard',
     description:
       'This dashboard was built for a CMS-based eCommerce platform to efficiently manage sales and overall operations. It features interactive graphs, advanced search filtering, dark and light mode toggling, and a responsive, mobile-friendly design—ensuring a smooth user experience across devices while offering full control over key business metrics.',
     languages: ['HTML', 'CSS', 'JavaScript'],

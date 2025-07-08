@@ -15,7 +15,7 @@ const ProjectInfo = () => {
       <div className="mediuminfo-container-header"></div>
       <section className="projectinfo-container">
         <div className="projectinfo-name-container">
-          <h2 className="projectinfo-name">{getProject.name}</h2>
+          <h2 className="projectinfo-name">{getProject.name.replace("-", " ")}</h2>
           <a
             href={getProject.liveLink}
             target="_blank"

@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Header from './Header';
 import Portfolio from './Portfolio';
 import About from './About';
@@ -14,7 +14,7 @@ const Home = () => {
       const el = document.getElementById(scrollToId);
       if (el) {
         // Smooth scroll
-        el.scrollIntoView({ behavior: "smooth" });
+        el.scrollIntoView({ behavior: 'smooth' });
       }
 
       // Optional: Clear scrollTo state to avoid repeated scrolls
@@ -22,13 +22,13 @@ const Home = () => {
     }
   }, [location]);
   return (
-  <>
-    <Header />
-    <Portfolio />
-    <About />
-    <Contact />
-  </>
-  )
-}
+    <>
+      <Header />
+      <Portfolio />
+      <About />
+      <Contact />
+    </>
+  );
+};
 
 export default Home;

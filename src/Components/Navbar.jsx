@@ -33,7 +33,8 @@ const Navbar = () => {
         </li>
         <li className="nav-item resume-button">
           <a
-            href="/syed-atril.pdf" download="syed-atril-resume.pdf"
+            href="https://drive.google.com/file/d/1iEjZ2J0Lgl1r4RBrhFdmdUZGA7P263BN/view?usp=sharing"
+            target="_blank"
             className="resume-link"
           >
             my resume{' '}
@@ -62,23 +63,39 @@ const Navbar = () => {
             onClick={toggleMenu}
           />
           <li className="nav-item-mobile">
-            <Link to="/" className="a-link" onClick={toggleMenu} state={{scrollTo: 'portfolio'}}>
+            <Link
+              to="/"
+              className="a-link"
+              onClick={toggleMenu}
+              state={{ scrollTo: 'portfolio' }}
+            >
               portfolio
             </Link>
           </li>
           <li className="nav-item-mobile">
-            <Link to="/" className="a-link" onClick={toggleMenu} state={{ scrollTo: 'about'}}>
+            <Link
+              to="/"
+              className="a-link"
+              onClick={toggleMenu}
+              state={{ scrollTo: 'about' }}
+            >
               about
             </Link>
           </li>
           <li className="nav-item-mobile">
-            <Link to="/" className="a-link" onClick={toggleMenu} state={{ scrollTo: 'contact'}}>
+            <Link
+              to="/"
+              className="a-link"
+              onClick={toggleMenu}
+              state={{ scrollTo: 'contact' }}
+            >
               contact
             </Link>
           </li>
           <li className="nav-item-mobile resume-button">
             <a
-              href="syed-atril.pdf" download="syed-atril-resume.pdf"
+              href="https://drive.google.com/file/d/1iEjZ2J0Lgl1r4RBrhFdmdUZGA7P263BN/view?usp=sharing"
+              target="_blank"
               className="resume-link"
             >
               my resume{' '}

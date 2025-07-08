@@ -5,7 +5,9 @@ import data from './API/Project';
 
 const ProjectInfo = () => {
   const { name } = useParams();
-  const getProject = data.find((item) => item.name.toLowerCase() === name.toLowerCase());
+  const getProject = data.find(
+    (item) => item.name.toLowerCase() === name.toLowerCase(),
+  );
   const languages = getProject.languages || [];
   const moreDetails = getProject.moreDetail || [];
 
@@ -15,7 +17,9 @@ const ProjectInfo = () => {
       <div className="mediuminfo-container-header"></div>
       <section className="projectinfo-container">
         <div className="projectinfo-name-container">
-          <h2 className="projectinfo-name">{getProject.name.replace("-", " ")}</h2>
+          <h2 className="projectinfo-name">
+            {getProject.name.replace('-', ' ')}
+          </h2>
           <a
             href={getProject.liveLink}
             target="_blank"

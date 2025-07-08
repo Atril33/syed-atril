@@ -13,7 +13,7 @@ const Portfolio = () => {
           <div className="project" key={project.name}>
             <h2 className="project-title">{project.name.replace("-", " ")}</h2>
             <p className="project-description">{project.description}</p>
-            <Link to={`project/${project.name}`} className="project-button">
+            <Link to={`project/${project.name.toLowerCase()}`} className="project-button">
               See More
             </Link>
           </div>

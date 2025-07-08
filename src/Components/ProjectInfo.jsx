@@ -5,7 +5,7 @@ import data from './API/Project';
 
 const ProjectInfo = () => {
   const { name } = useParams();
-  const getProject = data.find((item) => item.name === name);
+  const getProject = data.find((item) => item.name.toLowerCase() === name.toLowerCase());
   const languages = getProject.languages || [];
   const moreDetails = getProject.moreDetail || [];
 

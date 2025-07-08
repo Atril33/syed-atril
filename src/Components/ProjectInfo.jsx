@@ -2,7 +2,6 @@ import { Link, useParams } from 'react-router-dom';
 import './Style/projectinfo.css';
 import Navbar from './Navbar';
 import data from './API/Project';
-import backImage from './assets/back_image.png';
 
 const ProjectInfo = () => {
   const { name } = useParams();

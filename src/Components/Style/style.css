@@ -30,7 +30,7 @@ header::before {
   height: 400px;
   background-image: url('../assets/header-cover-image.svg');
   transform: scaleY(-1);
-  bottom: -400px;
+  bottom: -395px;
   z-index: -1;
 }
 

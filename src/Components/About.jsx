@@ -4,29 +4,9 @@ const About = () => (
       <div className="about-tab">
         <h2 className="about-heading">About Me</h2>
         <p className="about-des">
-          Hi, I’m Syed Atril, a Full-Stack Developer trained at Microverse, a
-          remote online school. I work with HTML, CSS, Tailwind, JavaScript,
-          React, Next.js, Ruby, Rails, and databases—building projects on my own
-          and with people from around the world.
-          <br />
-          <br />
-          I’m good at turning Figma or PSD designs into fully working,
-          responsive websites that look just like the design. If you have an
-          idea or design, I can build it for you clean, fast, and exactly how
-          you want it.
-          <br />
-          <br />
-          I also help businesses grow into strong brands by combining code with
-          creative ideas to make websites that stand out.
-          <br />
-          <br />
-          Working online is normal for me, I use tools like Git and Zoom every
-          day, and I enjoy working with teams across different time zones. I
-          also recently launched a project that I’ll be sharing soon stay tuned!
-          <br />
-          <br />
-          If you have an idea or need help building your website, feel free to
-          get in touch. I’d love to work with you!
+          Hi, I’m Syed Atril, a Full-Stack Developer trained at Microverse. I build modern, responsive web applications using HTML, CSS, Tailwind, JavaScript, React, Next.js, Ruby, Rails, and databases. I enjoy solving real-world problems through code and focus on creating clean, scalable solutions that grow with users’ needs. I’m experienced in turning Figma or PSD designs into pixel-perfect websites and helping businesses build strong digital products that stand out. I’m comfortable working remotely with global teams using tools like Git and Zoom, and I’m always learning and building—feel free to reach out if you’d like to work together.
+
+
         </p>
         <div className="social-links">
           <h3 className="linkedin">

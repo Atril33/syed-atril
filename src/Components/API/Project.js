@@ -4,8 +4,21 @@ import PDProductImagePopupSlider from '../assets/product-page-image-popup-slider
 import PDZoomMiror from '../assets/product-page-zoom-miror-functionality.mp4';
 import SoftStudioServicePage from '../assets/services-page-project-two.mp4';
 import CMSDashboard from '../assets/cms-dashboard-clip.mp4';
+import LaunchFolioTool from '../assets/launchfolio-portfolio-builder.jpg';
 
 const data = [
+  {
+    name: 'LaunchFolio',
+    description: 'LaunchFolio is a simple portfolio builder designed to help professionals who struggle to showcase their work online. Many people miss out on digital job opportunities because they don’t have a proper portfolio or access to a free and easy tool to create one. LaunchFolio solves this by allowing users to build a professional portfolio in minutes through an easy-to-use interface. It is completely free, requires no signup, and lets users update their portfolio anytime without any restrictions.',
+    languages: ['Nextjs', 'JavaScript', 'Tailwind CSS', 'CSS'],
+    liveLink: 'https://launchfolio.pages.dev/',
+    moreDetail:[
+      {
+        moreInfo: 'LaunchFolio is a simple portfolio builder designed to help professionals who struggle to showcase their work online. Many people miss out on digital job opportunities because they don’t have a proper portfolio or access to a free and easy tool to create one. LaunchFolio solves this by allowing users to build a professional portfolio in minutes through an easy-to-use interface. It is completely free, requires no signup, and lets users update their portfolio anytime without any restrictions.',
+        moreDetail: LaunchFolioTool,
+      }
+    ]
+  },
   {
     name: 'Pondesk',
     description:

@@ -11,7 +11,6 @@
 body {
   background: #fff;
   font-family: Poppins, sans-serif;
-  height: 2000px;
 }
 
 header {
@@ -580,23 +579,22 @@ nav {
 /* ////////////////////////////////// Contact ////////////////////// */
 
 .contact-container {
-  margin-top: 50px;
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
+
 }
 
 .contact-container::after {
   position: absolute;
   content: '';
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  bottom: -50%;
+  bottom: -20%;
   left: -200px;
   border: 1px solid #464545;
   z-index: -1;
@@ -605,10 +603,10 @@ nav {
 .contact-container::before {
   position: absolute;
   content: '';
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  bottom: -50%;
+  bottom: -20%;
   left: -210px;
   background: #259be96e;
   z-index: -1;
@@ -618,40 +616,87 @@ nav {
   padding: 0;
 }
 
-form {
-  max-width: 750px;
-  margin: 0 0 50px;
-  width: 50%;
+.contact-handler {
+  max-width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-.name,
-.email,
-.submit,
-.message {
-  margin: 5px 0;
-  padding: 8px;
-  font-size: 15px;
+.contact-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.contact-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 15px;
+  width: 100%;
+  background: #f7f7f7;
+  color: #2a2b2b;
   border: 1px solid #e1e1e1;
-  border-radius: 4px;
-  outline: none;
-}
-
-.message {
-  resize: vertical;
-}
-
-.submit {
-  background: #1198f6;
-  font-size: 15px;
-  border: none;
-  outline: none;
-  border-radius: 2px;
-  color: #fff;
+  font-size: 14px;
+  border-radius: 12px;
   cursor: pointer;
-  padding: 9px 8px;
 }
+
+.contact-btn p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #727171;
+  position: relative;
+}
+
+.contact-btn p::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background: #e1e1e1;
+  left: -35px;
+  top: 50%;
+}
+
+.contact-btn p::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background: #e1e1e1;
+  right: -35px;
+  top: 50%;
+}
+
+
+.contact-btn:hover {
+  opacity: 0.8;
+}
+
+.footer-social-links {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.footer-social-links a {
+  width: 100%;
+  padding: 30px 0;
+  background: #f3f2f2;
+  color: #3d4349;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #e1e1e1;
+}
+
 
 @media screen and (width <=1050px) {
   .portfolio-cont {
@@ -780,9 +825,10 @@ form {
     grid-template-columns: auto auto;
   }
 
+  /*
   form {
     width: 80%;
-  }
+  } */
 
   .keyboard-container {
     display: none;
@@ -821,4 +867,17 @@ form {
     margin-left: 10px;
     line-height: 45px;
   }
+
+  .contact-handler {
+    width: 90%;
+  }
+
+  .contact-info {
+    flex-wrap: wrap;
+  }
+
+  .footer-social-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }

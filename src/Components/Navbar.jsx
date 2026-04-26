@@ -33,7 +33,7 @@ const Navbar = () => {
         </li>
         <li className="nav-item resume-button">
           <a
-            href="https://drive.google.com/file/d/1iEjZ2J0Lgl1r4RBrhFdmdUZGA7P263BN/view?usp=sharing"
+            href="https://drive.google.com/file/d/1tElKiDxg8XOpy_LUqR5IY0mc6Wz_SAzY/view?usp=sharing"
             target="_blank"
             className="resume-link"
           >
@@ -94,7 +94,7 @@ const Navbar = () => {
           </li>
           <li className="nav-item-mobile resume-button">
             <a
-              href="https://drive.google.com/file/d/1iEjZ2J0Lgl1r4RBrhFdmdUZGA7P263BN/view?usp=sharing"
+              href="https://drive.google.com/file/d/1tElKiDxg8XOpy_LUqR5IY0mc6Wz_SAzY/view?usp=sharing"
               target="_blank"
               className="resume-link"
             >

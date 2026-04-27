@@ -4,9 +4,16 @@ const About = () => (
       <div className="about-tab">
         <h2 className="about-heading">About Me</h2>
         <p className="about-des">
-          Hi, I’m Syed Atril, a Full-Stack Developer trained at Microverse. I build modern, responsive web applications using HTML, CSS, Tailwind, JavaScript, React, Next.js, Ruby, Rails, and databases. I enjoy solving real-world problems through code and focus on creating clean, scalable solutions that grow with users’ needs. I’m experienced in turning Figma or PSD designs into pixel-perfect websites and helping businesses build strong digital products that stand out. I’m comfortable working remotely with global teams using tools like Git and Zoom, and I’m always learning and building—feel free to reach out if you’d like to work together.
-
-
+          Hi, I’m Syed Atril, a Full-Stack Developer trained at Microverse. I
+          build modern, responsive web applications using HTML, CSS, Tailwind,
+          JavaScript, React, Next.js, Ruby, Rails, and databases. I enjoy
+          solving real-world problems through code and focus on creating clean,
+          scalable solutions that grow with users’ needs. I’m experienced in
+          turning Figma or PSD designs into pixel-perfect websites and helping
+          businesses build strong digital products that stand out. I’m
+          comfortable working remotely with global teams using tools like Git
+          and Zoom, and I’m always learning and building—feel free to reach out
+          if you’d like to work together.
         </p>
         <div className="social-links">
           <h3 className="linkedin">

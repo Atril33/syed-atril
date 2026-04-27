@@ -585,7 +585,6 @@ nav {
   align-items: center;
   flex-direction: column;
   position: relative;
-
 }
 
 .contact-container::after {
@@ -633,7 +632,6 @@ nav {
   gap: 20px;
 }
 
-
 .contact-btn {
   display: flex;
   flex-direction: column;
@@ -675,7 +673,6 @@ nav {
   top: 50%;
 }
 
-
 .contact-btn:hover {
   opacity: 0.8;
 }
@@ -696,7 +693,6 @@ nav {
   border-radius: 12px;
   border: 1px solid #e1e1e1;
 }
-
 
 @media screen and (width <=1050px) {
   .portfolio-cont {
@@ -879,5 +875,4 @@ nav {
   .footer-social-links {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }

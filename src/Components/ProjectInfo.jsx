@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import './Style/projectinfo.css';
 import Navbar from './Navbar';
 import data from './API/Project';
